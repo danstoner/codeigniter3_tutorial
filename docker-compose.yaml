@@ -1,0 +1,18 @@
+version: "3.5"
+
+services:
+  web:
+    container_name: codeigniter3_tutorial_web
+    image: nginx:latest
+    ports:
+        - "8888:80"
+    volumes:
+        - ./site/:/usr/share/nginx/html/
+        - ./nginx.site.conf:/etc/nginx/conf.d/default.conf
+    links:
+        - php
+  php:
+    container_name: codeigniter3_tutorial_php
+    image: docker.io/bitnami/php-fpm:latest
+    volumes:
+       - ./site/:/app  

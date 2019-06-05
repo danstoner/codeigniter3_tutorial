@@ -5,6 +5,8 @@ services:
     container_name: codeigniter3_tutorial_web
     image: nginx:latest
     ports:
+        # Web app will be available from local computer at:
+        #   http://localhost:8888/
         - "8888:80"
     volumes:
         - ./site/:/usr/share/nginx/html/

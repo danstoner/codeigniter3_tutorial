@@ -15,4 +15,5 @@ services:
     container_name: codeigniter3_tutorial_php
     image: docker.io/bitnami/php-fpm:latest
     volumes:
-       - ./site/:/app  
+       - ./site/:/app
+       - ./php.ini:/opt/bitnami/php/etc/php.ini

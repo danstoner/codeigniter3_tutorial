@@ -1,10 +1,10 @@
-## CodeIgniter 3 
+## CodeIgniter 3
 
 Tutorial and experiments with CodeIgniter 3
 
 https://codeigniter.com/user_guide/tutorial/index.html
 
-## How to Run in Docker
+## How to Run in Docker (via Docker Compose)
 
 To run containers in foreground:
 
@@ -22,4 +22,3 @@ http://localhost:8888/
 To shutdown:
 
 `codeigniter3_tutorial$  docker-compose down`
-
